@@ -35,7 +35,7 @@ const MapSection = () => {
 
         <ScrollAnimation delay={100}>
           <motion.a
-            href="https://maps.app.goo.gl/2GDxDh8wa5mJbWgt9"
+            href="https://maps.app.goo.gl/dCjJ52mncRA9pWq7A"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
