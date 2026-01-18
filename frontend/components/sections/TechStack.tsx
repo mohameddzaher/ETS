@@ -150,8 +150,7 @@ const TechStack = () => {
 
               {/* Connection Lines with particles */}
               <svg
-                className="absolute inset-0 w-full h-full"
-                style={{ overflow: "visible" }}
+                className="absolute inset-0 w-full h-full svg-overflow-visible"
               >
                 <defs>
                   <linearGradient id="techLineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
