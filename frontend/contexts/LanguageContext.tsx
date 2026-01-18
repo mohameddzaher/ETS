@@ -439,6 +439,18 @@ const translations: Record<Language, Record<string, string>> = {
       "Operations specialist ensuring excellence in delivery and client satisfaction.",
     financialStrategist:
       "Financial strategist driving sustainable growth and business development.",
+    
+    // Board Members Names
+    mohamedZaher: "Mohamed Zaher",
+    dulaimAlNasher: "Dulaim Al Nasher",
+    samehHassan: "Sameh Hassan",
+    naderMagdy: "Nader Magdy",
+    
+    // Board Members Quotes
+    mohamedZaherQuote: "Passionate about transforming businesses through innovative technology solutions and strategic vision for growth.",
+    dulaimAlNasherQuote: "Dedicated to driving excellence and delivering cutting-edge solutions that consistently exceed client expectations.",
+    samehHassanQuote: "Committed to building strong partnerships and fostering innovation in every project we undertake together.",
+    naderMagdyQuote: "Focused on strategic planning and ensuring our company's growth aligns perfectly with our long-term vision.",
   },
   ar: {
     // Navigation
@@ -852,6 +864,18 @@ const translations: Record<Language, Record<string, string>> = {
     techExpert: "خبير في التقنيات المتطورة وهندسة البرمجيات.",
     operationsSpecialist: "أخصائي عمليات يضمن التميز في التسليم ورضا العملاء.",
     financialStrategist: "استراتيجي مالي يدفع النمو المستدام وتطوير الأعمال.",
+    
+    // Board Members Names
+    mohamedZaher: "محمد زاهر",
+    dulaimAlNasher: "دليم الناشر",
+    samehHassan: "سامح حسن",
+    naderMagdy: "نادر مجدي",
+    
+    // Board Members Quotes
+    mohamedZaherQuote: "شغوف بتحويل الأعمال من خلال حلول التكنولوجيا المبتكرة والرؤية الاستراتيجية للنمو.",
+    dulaimAlNasherQuote: "ملتزم بدفع التميز وتقديم حلول متطورة تتجاوز باستمرار توقعات عملائنا.",
+    samehHassanQuote: "ملتزم ببناء شراكات قوية وتعزيز الابتكار في كل مشروع نقوم به معاً.",
+    naderMagdyQuote: "مركز على التخطيط الاستراتيجي وضمان نمو شركتنا يتماشى تماماً مع رؤيتنا طويلة الأمد.",
   },
 };
 

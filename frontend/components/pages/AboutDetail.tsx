@@ -5,12 +5,14 @@ import {
   Award,
   Users,
   Globe,
-  Target,
-  Heart,
-  Lightbulb,
+  Shield,
+  Zap,
+  Star,
+  Handshake,
   Sparkles,
   Code,
   MapPin,
+  Linkedin,
 } from "lucide-react";
 import ScrollAnimation from "../ScrollAnimation";
 import { motion } from "framer-motion";
@@ -21,22 +23,22 @@ const AboutDetail = () => {
 
   const values = [
     {
-      icon: Heart,
+      icon: Shield,
       titleKey: "integrity",
       descriptionKey: "integrityDesc",
     },
     {
-      icon: Lightbulb,
+      icon: Zap,
       titleKey: "innovation",
       descriptionKey: "innovationDesc",
     },
     {
-      icon: Target,
+      icon: Star,
       titleKey: "excellence",
       descriptionKey: "excellenceDesc",
     },
     {
-      icon: Users,
+      icon: Handshake,
       titleKey: "collaboration",
       descriptionKey: "collaborationDesc",
     },
@@ -44,32 +46,28 @@ const AboutDetail = () => {
 
   const boardMembers = [
     {
-      name: "Ahmed Al-Saud",
-      roleKey: "ceoFounder",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
-      descriptionKey: "visionaryLeader",
+      nameKey: "mohamedZaher",
+      image: "/images/directors/d4.png",
+      linkedin: "https://www.linkedin.com/in/mohameddzaher/",
+      quoteKey: "mohamedZaherQuote",
     },
     {
-      name: "Sarah Mohamed",
-      roleKey: "cto",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
-      descriptionKey: "techExpert",
+      nameKey: "dulaimAlNasher",
+      image: "/images/directors/dulaim.jpeg",
+      linkedin: "https://www.linkedin.com/in/dulaim-al-nasher/",
+      quoteKey: "dulaimAlNasherQuote",
     },
     {
-      name: "Mohammed Hassan",
-      roleKey: "coo",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop",
-      descriptionKey: "operationsSpecialist",
+      nameKey: "samehHassan",
+      image: "/images/directors/sameh.PNG",
+      linkedin: "https://www.linkedin.com/in/sameh-hassan-en/",
+      quoteKey: "samehHassanQuote",
     },
     {
-      name: "Fatima Ali",
-      roleKey: "cfo",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
-      descriptionKey: "financialStrategist",
+      nameKey: "naderMagdy",
+      image: "/images/directors/nader.jpeg",
+      linkedin: "https://www.linkedin.com/in/nader-magdy-en/",
+      quoteKey: "naderMagdyQuote",
     },
   ];
 
@@ -182,29 +180,36 @@ const AboutDetail = () => {
                     key={index}
                     whileHover={{ y: -5 }}
                     transition={{ duration: 0.15 }}
-                    className="group p-4 bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-xl border border-slate-800 hover:border-[#eb1f28]/50 transition-all duration-150 text-center"
+                    className="group p-4 bg-gradient-to-br from-slate-900/60 to-slate-950/60 backdrop-blur-md rounded-xl border border-slate-800 hover:border-[#eb1f28]/50 transition-all duration-150 text-center flex flex-col"
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#eb1f28]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
-                    <div className="relative w-24 h-24 rounded-full overflow-hidden mx-auto mb-3 border-2 border-[#eb1f28]/50 relative z-10">
+                    <div className="relative w-30 h-40 rounded-lg overflow-hidden mx-auto mb-3  border-[#eb1f28]/50 relative z-10">
                       <Image
                         src={member.image}
-                        alt={member.name}
+                        alt={t(member.nameKey)}
                         fill
                         className="object-cover"
                       />
                     </div>
-                    <h3 className="text-sm font-semibold mb-1 text-white relative z-10">
-                      {member.name}
+                    <h3 className="text-sm font-semibold text-white mb-2 relative z-10">
+                      {t(member.nameKey)}
                     </h3>
-                    <p className="text-xs text-[#eb1f28] mb-2 relative z-10">
-                      {t(member.roleKey)}
+                    <p className="text-[10px] text-slate-400 mb-3 leading-relaxed relative z-10 px-2 min-h-[3rem] flex items-center justify-center">
+                      {t(member.quoteKey)}
                     </p>
-                    <p
-                      className="text-[10px] text-slate-400 leading-relaxed relative z-10"
-                      style={{ textAlign: "justify" }}
-                    >
-                      {t(member.descriptionKey)}
-                    </p>
+                    <div className="mt-auto relative z-10">
+                      <motion.a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-800 hover:bg-[#eb1f28] transition-colors border border-slate-700 hover:border-[#eb1f28]"
+                        aria-label="LinkedIn Profile"
+                      >
+                        <Linkedin className="w-4 h-4 text-slate-400 hover:text-white" />
+                      </motion.a>
+                    </div>
                   </motion.div>
                 ))}
               </div>
