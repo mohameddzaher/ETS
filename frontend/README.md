@@ -77,4 +77,4 @@ frontend/
 
 ## License
 
-© 2024 Energize Tech Solutions. All rights reserved.
+© 2026 Energize Tech Solutions. All rights reserved.

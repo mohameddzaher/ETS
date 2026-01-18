@@ -188,13 +188,13 @@ const Footer = () => {
               } space-x-6`}
             >
               <Link
-                href="#"
+                href="/privacy-policy"
                 className="text-xs text-slate-500 hover:text-[#eb1f28] transition-colors"
               >
                 {t("privacyPolicy")}
               </Link>
               <Link
-                href="#"
+                href="/terms-of-service"
                 className="text-xs text-slate-500 hover:text-[#eb1f28] transition-colors"
               >
                 {t("termsOfService")}
